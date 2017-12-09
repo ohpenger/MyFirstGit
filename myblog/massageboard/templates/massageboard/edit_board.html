@@ -103,8 +103,6 @@ box-shadow: 1px 1px 1px #3D3D3D;
 color: #333;
 background-color: #EBEBEB;
 }
-
-
 </style>
 </head>
 
@@ -112,7 +110,10 @@ background-color: #EBEBEB;
 {% if messages %}
 <ul class="messages">
     {% for message in messages %}
-    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    <li{% if message.tags %} class="{{ message.tags }}"
+    {% endif %}>
+        <script type="text/javascript">alert("{{ message }}")</script>
+    </li>
     {% endfor %}
 </ul>
 {% endif %}
@@ -141,7 +142,6 @@ background-color: #EBEBEB;
 <span>Message :</span>
     <input id="massage" type="text" name="massage"  class="inputarea"placeholder="Your Massage" />
 </label>
-
 
 <label>
 <input type="submit" class="button" value="提交" />
