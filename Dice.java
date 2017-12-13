@@ -1,5 +1,5 @@
 package sixchapter;
-
+/*ÖÀ÷»×ÓĞ¡ÓÎÏ·*/
 public class Dice {
 	public static void main(String[] args) {
 		int[] count=new int[13];
